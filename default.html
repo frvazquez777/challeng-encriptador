@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Challenge Encritador</title>
+</head>
+
+<body>
+
+    <header>
+        <h1 class="titulo">Encriptador</h1>
+    </header>
+
+    <main>
+        <div class="caja-entrada">
+            <h2 class="subtitulo">Encriptar/Descriptar</h2>
+            <textarea id="dato-entrada" placeholder="Ingrese datos" required></textarea>
+            <button class="btn btn-encriptar" onclick="encriptar();">Encriptar</button>
+            <button class="btn btn-general" onclick="descriptar();">Desencriptar</button>
+           <br>
+            <button class="btn-limpiar" onclick="limpiar();">limpiar</button>
+
+        </div>
+
+
+        <div class="caja-resultado">
+            <h2 class="subtitulo">Resultado</h2>
+            <br>
+            <p class="texto-resultado"></p>
+
+            <div class="contenido-imagen">
+                <img src="resultado.svg" alt="muñeco">
+            </div>
+
+
+            <br>
+            <button id="btnCopiar" class="btn btn-general" onclick="copiar()">Copiar</button>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 - Fredy Vazquez </p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
